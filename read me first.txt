@@ -1,0 +1,125 @@
+# Medium Article Scraper and Viewer
+
+This project is a full-stack web application that allows users to input a topic and scrape articles related to that topic from Medium. The application displays the top 5 related articles on the page, and users can click on an article to view it on Medium.
+
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Setup](#setup)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
+- [Running the Application](#running-the-application)
+- [Deploying on Render](#deploying-on-render)
+- [License](#license)
+
+## Features
+
+- Web scraping using Puppeteer to fetch articles from Medium.
+- RESTful API using Node.js and Express.
+- Frontend built with React.
+- Client-side form validation.
+- Loading indicators and error messages.
+- Responsive design.
+
+## Requirements
+
+- Node.js
+- npm (Node Package Manager)
+
+## Setup
+
+### Backend
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/your-username/medium-article-scraper.git
+    cd medium-article-scraper/backend
+    ```
+
+2. Install the dependencies:
+
+    ```sh
+    npm install
+    ```
+
+3. Create a `.env` file in the `backend` directory (if needed for environment variables).
+
+4. Start the backend server:
+
+    ```sh
+    node index.js
+    ```
+
+### Frontend
+
+1. Navigate to the `frontend` directory:
+
+    ```sh
+    cd ../frontend
+    ```
+
+2. Install the dependencies:
+
+    ```sh
+    npm install
+    ```
+
+3. Start the frontend development server:
+
+    ```sh
+    npm start
+    ```
+
+The application should now be running on `http://localhost:3000`.
+
+## Running the Application
+
+To run the application locally:
+
+1. Start the backend server:
+
+    ```sh
+    cd backend
+    node index.js
+    ```
+
+2. Start the frontend development server:
+
+    ```sh
+    cd ../frontend
+    npm start
+    ```
+
+Visit `http://localhost:3000` in your web browser to see the application in action.
+
+## Deploying on Render
+
+### Backend Deployment
+
+1. **Sign Up/Log In**: Go to [Render](https://render.com/) and create an account or log in.
+
+2. **Create a New Web Service**:
+    - Click the "New +" button and select "Web Service".
+    - Connect your GitHub repository.
+    - Set the build command to `npm install`.
+    - Set the start command to `node index.js`.
+
+3. **Deploy**: Click "Create Web Service" to start the deployment.
+
+### Frontend Deployment
+
+1. **Sign Up/Log In**: Go to [Render](https://render.com/) and create an account or log in.
+
+2. **Create a New Static Site**:
+    - Click the "New +" button and select "Static Site".
+    - Connect your GitHub repository.
+    - Set the build command to `npm run build`.
+    - Set the publish directory to `build`.
+
+3. **Deploy**: Click "Create Static Site" to start the deployment.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
